@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/register/script.js" type="module"></script>
+    <link rel="stylesheet" href="/global.css">
+    <title>Register | eCademy</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <!-- Brand -->
+            <p>
+                e<span>Cademy</span>
+            </p>
+
+            <!-- Links -->
+            <ul class="links" >
+                <li><a href="/login/">Login</a></li>
+                <li class="register"><a href="/register/">Register</a></li>
+            </ul>
+
+            <!-- Hamburger Menu -->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="left_image">
+            <img src="/assets/Login_image.svg" alt="register">
+        </div>
+        <div class="right-content">
+            <h1>Register</h1>
+            <form>
+                <div class="wrapper">
+
+                    <label>I am a ...</label>
+                    <select name="user_type" id="user_type">
+                        <option value="no" selected disabled>Student/Teacher</option>
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                    </select>
+
+                    <label for="email">Email id</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" id="name">
+
+                    <button class="btn" id="register">Register</button>
+                    <span>Already have an account? <a>Log in</a></span>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

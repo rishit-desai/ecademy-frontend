@@ -9,7 +9,7 @@ export default {
 	},
 	plugins: [
 		'@snowpack/plugin-sass',
-		// '@snowpack/plugin-webpack'
+		'@snowpack/plugin-dotenv'
 	],
 	buildOptions: { clean: true },
 };

@@ -1,0 +1,119 @@
+
+// Navigation bar
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    padding: 0.8rem 4rem;
+    box-shadow: 0 1px 4px 0 rgb(94, 94, 94);
+    font-size: 1.6rem;
+
+    p {
+        font-weight: 500;
+        color: #1294F2;
+        z-index: 1001;
+
+        span {
+            color: #0F296D;
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+        // color: ;
+    }
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    z-index: 1000;
+
+    div {
+        width: 20px;
+        height: 3px;
+        background-color: black;
+        margin: 3px;
+        transition: all 0.3s ease;
+    }
+}
+
+.links[data-state="active"] {
+    transform: translateX(0%);
+    transition: transform 0.3s ease-in;
+}
+
+.links[data-state="inactive"] {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+}
+
+@keyframes naviagtionLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes line1_animation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+    100% {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+}
+
+@keyframes line2_animation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes line3_animation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+    100% {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+@media (max-width: 670px) {
+
+    .links {
+        position: fixed;
+        inset: 0 0 0 0%;
+        flex-direction: column;
+        padding: min(20vh, 5rem) 2em;
+        background: rgba(80, 117, 206, 0.5);
+        backdrop-filter: blur(1rem);
+        align-items: center;
+        transform: translateX(100%);
+        z-index: 950;
+
+        li {
+            opacity: 0;
+            color: white;
+        }
+    }
+
+    .burger {
+        display: block;
+    }
+}

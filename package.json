@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@snowpack/plugin-dotenv": "^2.2.0",
-    "@snowpack/plugin-sass": "^1.4.0"
+    "@snowpack/plugin-sass": "^1.4.0",
+    "firebase": "^9.6.9",
+    "joi": "^17.6.0"
   }
 }

@@ -38,26 +38,29 @@
         </div>
         <div class="right-content">
             <h1>Register</h1>
-            <form>
+            <form data-ng-app="registerModule" data-ng-controller="registerController" novalidate data-ng-submit="register()">
                 <div class="wrapper">
-
                     <label>I am a ...</label>
-                    <select name="user_type" id="user_type">
+                    <select name="user_type" id="user_type" data-ng-model="profession" data-ng-change="remove_error('profession')">
                         <option value="no" selected disabled>Student/Teacher</option>
                         <option value="student">Student</option>
                         <option value="teacher">Teacher</option>
                     </select>
-
-                    <label for="email">Email id</label>
-                    <input type="email" name="email" id="email">
-
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
+                    <p class="error">{{profession_error}}</p>
 
                     <label for="name">Your Name</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" data-ng-model="name" data-ng-change="remove_error('name')">
+                    <p class="error">{{name_error}}</p>
 
-                    <button class="btn" id="register">Register</button>
+                    <label for="email">Email id</label>
+                    <input type="text" data-ng-model="email" data-ng-change="remove_error('email')">
+                    <p class="error">{{email_error}}</p>
+
+                    <label for="password">Password</label>
+                    <input type="password" data-ng-model="password" data-ng-change="remove_error('password')">
+                    <p class="error">{{password_error}}</p>
+
+                    <button class="btn" type="submit">Register</button>
                     <span>Already have an account? <a>Log in</a></span>
                 </div>
             </form>

@@ -136,7 +136,7 @@ a {
             background-color: #fff;
             box-sizing: border-box;
             z-index: 1;
-
+            margin-top: 1rem;
         }
         label {
             font-size: 1rem;
@@ -152,7 +152,7 @@ a {
         }
         select {
            box-sizing: border-box;
-            margin: 0 0 2rem;
+            margin: 0 0 1rem;
             height: 36px;
             width: 50%;
             padding-left: 0.6rem;
@@ -274,4 +274,10 @@ a {
     .burger {
         display: block;
     }
+}
+
+.error {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 2rem;
 }

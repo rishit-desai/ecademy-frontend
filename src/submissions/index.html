@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/submissions/script.js" type="module"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/global.css">
+    <title>Submission</title>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="welcome_name">
+            <h2>Welcome John!</h2>
+        </div>
+        <div class="wrap-icon">
+            <div class="notify-icon">
+                <img src="/assets/icons/New_Notification.svg" alt="">
+            </div>
+            <div class="notify-icon2">
+                <img src="/assets/icons/Avatar.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="d-flex justify-content-start">
+            <div class="select-class">
+                <div class="wrapper">
+                    <select name="select_class" id="select_class">
+                        <option value="no" selected disabled>Select Class</option>
+                        <option value="10th">10th</option>
+                        <option value="11th">11th</option>
+                    </select>
+                </div>
+                <button class="btn" id="register">Closet due first</button>
+                <div class="table">
+                    <table>
+                        <tr>
+                            <th>Title</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                            <th>Due</th>
+                        </tr>
+                        <tr>
+                            <td>Web Tech Exo 10</td>
+                            <td>Pending</td>
+                            <td><button class="btn" id="register">Submit</button></td>
+                            <td>20-03-2022 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Web Tech Exo 10</td>
+                            <td>Pending</td>
+                            <td><button class="btn" id="register">Submit</button></td>
+                            <td>20-03-2022 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Web Tech Exo 10</td>
+                            <td>Pending</td>
+                            <td><button class="btn" id="register">Submit</button></td>
+                            <td>20-03-2022 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Web Tech Exo 10</td>
+                            <td>Pending</td>
+                            <td><button class="btn" id="register">Submit</button></td>
+                            <td>20-03-2022 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Web Tech Exo 10</td>
+                            <td>Pending</td>
+                            <td><button class="btn" id="register">Submit</button></td>
+                            <td>20-03-2022 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Web Tech Exo 10</td>
+                            <td>Pending</td>
+                            <td><button class="btn" id="register">Submit</button></td>
+                            <td>20-03-2022 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Web Tech Exo 10</td>
+                            <td>Pending</td>
+                            <td><button class="btn" id="register">Submit</button></td>
+                            <td>20-03-2022 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Web Tech Exo 10</td>
+                            <td>Pending</td>
+                            <td><button class="btn" id="register">Submit</button></td>
+                            <td>20-03-2022 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Web Tech Exo 10</td>
+                            <td>Pending</td>
+                            <td><button class="btn" id="register">Submit</button></td>
+                            <td>20-03-2022 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Web Tech Exo 10</td>
+                            <td>Pending</td>
+                            <td><button class="btn" id="register">Submit</button></td>
+                            <td>20-03-2022 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Web Tech Exo 10</td>
+                            <td>Pending</td>
+                            <td><button class="btn" id="register">Submit</button></td>
+                            <td>20-03-2022 23:00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="stats-rect">
+                <div class="chart">
+                    <!--Load the AJAX API-->
+                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                    <script type="text/javascript">
+                        // Load the Visualization API and the corechart package.
+                        google.charts.load('current', { 'packages': ['corechart'] });
+                        // Set a callback to run when the Google Visualization API is loaded.
+                        google.charts.setOnLoadCallback(drawChart);
+                        // Callback that creates and populates a data table,
+                        // instantiates the pie chart, passes in the data and
+                        // draws it.
+                        function drawChart()
+                        {
+                            // Create the data table.
+                            var data = new google.visualization.arrayToDataTable([
+                                ['Element', 'Density', { role: 'style' }],
+                                ['Assigned', 3, '#F1554C'],
+                                ['Completed', 1, '#1C45B0'],
+                                ['Submitted Late', 1, '#FEA5A0']
+                            ]);
+                            // Set chart options
+                            var options = {
+                                'title': 'Assignments',
+                                'width': 400,
+                                'height': 300,
+                                'orientation': 'horizontal',
+                                'legend': {
+                                    position: 'none'
+                                }
+                            };
+                            // Instantiate and draw our chart, passing in some options.
+                            var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+                            chart.draw(data, options);
+                        }
+                    </script>
+                    <div id="chart_div"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="wrap-icons2">
+            <div class="go-class-icon1">
+                <img src="/assets/icons/Other 20.svg" alt="" width=145px height=140px>
+            </div>
+            <div class="go-class-icon2">
+                <img src="/assets/icons/Marni 5.svg" alt="" width=239px height=330px>
+            </div>
+        </div> -->
+    </main>
+</body>
+
+</html>

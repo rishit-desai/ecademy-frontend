@@ -1,0 +1,183 @@
+body {
+    background-color: #F3F5FB;
+}
+
+main {
+    padding-top: 2rem;
+}
+
+.tasks {
+    //glow with box-shadow
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.658), 0 0 0 3px rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: #FFF;
+    margin: 0 2rem 0 0;
+    padding: 1rem 2rem;
+    width: fit-content;
+    div {
+        display: inline-block !important;
+        margin: 0px 10px;
+    }
+    .tasks-content {
+        p {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+.task_assignment {
+    width: 80%;
+    background-color: transparent;
+}
+
+.attendance {
+    display: inline-block;
+    background-color: #FFF;
+    width: 35vw;
+    padding: 2rem;
+    margin: 2rem 0 2rem 0rem;
+    border-radius: 20px;
+    h1 {
+        font-size: 1.5rem;
+        margin: 2rem;
+        text-align: start;
+    }
+    .content {
+        display: block;
+        div {
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: #F9F9F9;
+                padding: 0.5rem 1rem;
+                width: 30%;
+                border-radius: 10px;
+                box-shadow:  0 0 5px 0px rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+                color: #0F296D;
+                h2 {
+                    text-align: center;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+                p {
+                    font-weight: lighter;
+                    text-align: center;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+    .defaulter {
+        margin: 2rem 0;
+        height: 100px;
+        background-color: #F9F9F9;
+        border-radius: 10px;
+        box-shadow:  0 0 5px 0px rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        .vertical-bar {
+            display: inline-block;
+            background-color: #F1554C;
+            width: 10px;
+            height: 100px;
+            position: absolute;
+            border-radius:  10px 0 0 10px;
+        }
+        h1 {
+            transform: translateX(20px);
+            font-size: 1.5rem;
+            display: inline-block;
+        }
+    }
+}
+
+.chart {
+    margin: 2rem;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #FFF;
+    padding: 2rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 0 0 2rem;
+}
+
+.todo {
+    display: inline-block;
+    width: 30vw;
+    height: 400px;
+    padding: 0rem;
+    margin-left: 3rem;
+    border-radius: 20px;
+    background-color: #FFF;
+    .vertical-bar {
+        display: inline-block;
+        background-color: #0066FF;
+        width: 10px;
+        height: 400px;
+        position: absolute;
+        border-radius:  10px 0 0 10px;
+    }
+    h1 {
+        font-size: 1.5rem;
+        margin: 2rem;
+        padding-top: 2rem;
+        text-align: start;
+    }
+    ul {
+        overflow: auto;
+        list-style: none;
+        padding: 0;
+        height: 300px;
+        margin: 0 2rem;
+        li {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-radius: 10px;
+            background-color: #FFF;
+            span {
+                font-weight: lighter;
+                text-align: center;
+                font-size: 1rem;
+                margin-left: 0.6rem;
+            }
+        }
+        input[type="checkbox"] {
+            padding: 2rem;
+        }
+    }
+}
+
+.add-task {
+    display: inline-block;
+    width: 40vw;
+    padding: 2rem;
+    border-radius: 40px;
+    background-color: #FFF;
+    h1 {
+        font-size: 1rem;
+        margin:  0 0 5rem;
+    }
+    .image {
+        position: absolute;
+        transform: translateX(300px) translateY(-68px);
+    }
+    button {
+        padding: 0.5rem 1rem;
+        width: 200px;
+        font-size: 1.2rem;
+        background-color: #7000FE;
+        border-radius: 75px;
+        border: none;
+        margin-bottom: 2rem;
+        //inner shadow
+        box-shadow: 0px 0px -25px 0px #000000, 0 0 0 3px #000000;
+    }
+}
